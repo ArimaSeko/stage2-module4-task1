@@ -13,8 +13,7 @@ public class Employee {
     private String email;
     private String carNumber;
 
-    public Employee() {
-    }
+    public Employee() {//idk why this method is empty}
 
     public String getName() {
         return name;

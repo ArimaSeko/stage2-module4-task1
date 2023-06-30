@@ -20,9 +20,9 @@ public class H2ConnectionFactory  implements ConnectionFactory {
             String password=properties.getProperty("password");
             connection = DriverManager.getConnection(url,name,password);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("IOE");
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("SQL E");
         }
         return connection;
     }
